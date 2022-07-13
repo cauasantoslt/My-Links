@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  --bg-color: #edf2ff;
+  --text-color: #010931;
+  --primary-color: #9400fe;
+  --primary-color-dark: #0c0018;
+  --click-butom: #540099;
+}
+
+body.dark-purple {
+  --bg-color: #010931;
+  --text-color: #ffffff;
+  --primary-color: #9400fe;
+  --primary-color-dark: #0c0018;
+  --click-butom: #540099;
+}
+
+body.dark-green {
+  --bg-color: #0e001a;
+  --text-color: #ffffff;
+  --primary-color: #00fe87;
+  --primary-color-dark: #00180d;
+  --click-butom: #009952;
+}
+
+body.dark-blue {
+  --bg-color: #010931;
+  --text-color: #ffffff;
+  --primary-color: #00d8fe;
+  --primary-color-dark: #001218;
+  --click-butom: #007a99;
+}
+
+body {
+  /*background: var(--bg-color);*/
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  background-image: url(background.jpg);
+  background-position: 50%;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: var(--primary-color) solid 4px;
+  padding: 3.7px;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+}
+
+.icons {
+  height: 24px;
+  width: 24px;
+  margin-right: 15px;
+  align-self: center;
+}
+
+/* pseudo-class */
+
+ul li a:hover {
+  background: var(--click-butom);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+  line-height: 16px;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
